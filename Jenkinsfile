@@ -2,7 +2,7 @@ node('built-in')
 {
    stage('ContinuousDownload') 
    {
-       git 'https://github.com/Manikantatat/maven.git'    
+       git branch: 'main', url: 'https://github.com/Manikantatat/maven' 
    }
    stage('ContinuousBuild')
    {
